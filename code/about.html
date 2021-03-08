@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .heading{
+            display: block;
+            width: 500px;
+            padding: 10px;
+            margin-top:50px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.6em;
+            text-align: center;
+            }
+            .block{
+                display:block;
+                background-color: black;
+                color:white;
+                text-align:center;
+                width:100px;
+                padding:20px;
+                margin: 0 auto;  
+                text-decoration: none;
+            }
+            .block:hover{
+                background-color: white;
+                color:black;
+            }
+            .button-column{
+                column-count: 2;
+                column-gap: 10px; 
+            }
+            .row{
+                display:flex;
+                flex-wrap:wrap;
+                margin:25px;
+                padding:0 4px;
+                justify-content: center;
+            }
+            .column{
+                flex:30%;
+                padding:0 50px;
+            }
+            .column img{
+                vertical-align: middle;
+                
+                width: 100%;
+            }
+            @media screen and (max-width:900px){
+                .column{
+                    flex:60%;  
+                    max-width: 60%;
+                }
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="portfolio.js"></script>
+        <div id="navbar">
+            <a href="Recent%20resume%20copy.pdf">&nbsp;&nbsp;Resume&nbsp;&nbsp;</a>
+            <a href="Work.html">&nbsp;&nbsp;Work&nbsp;&nbsp;</a>
+            <a href="Work.html">&nbsp;&nbsp;Project&nbsp;&nbsp;</a>
+            <a href="about.html" ><B>&nbsp;&nbsp;About&nbsp;&nbsp;</B></a>         
+            <a href="index.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a>
+        </div>
+        <br/><br/>
+        <div class="heading">
+            <br/><br/>
+            <B>Creative Individual. Ready for future.</B>
+            <br/><br/><br/>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="CED18DC8E1F55102655791FF2C1B0AB9.jpg">
+            </div>
+            <div class="column">
+                <p>
+                    
+                    I am currently a first year university student studying Interactive Multimedia and Design at Carleton University in Ottawa, Canada. 
+                    <br/><br/>
+                    I am passionate about graphic design, 3D animation, and anything relates to interactive design. I was trained to work on a variety of traditional art medium as well. 
+                    <br/><br/>
+                    I am a highly adaptable person who is comfortable being in a team and working independently. 
+                    <br/><br/>
+                    Outside of study and work, I enjoy playing video games and going to musical theatre.
+                    <br/><br/>
+                    I am able to speak English, Mandarin, and a little bit of Japanese. Feel free to contact me!
+                </p>
+                <br/>
+                <div class="button-column">
+                    <a class="block" href="mailto:xinyuelu2000@hotmail.com" target="_blank">Email</a>    
+                    <a class="block" href="https://www.linkedin.com/in/xinyue-lucy-lu-b3ba27173/" target="_blank">LinkedIn</a>   
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+    

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Work</title>
+            <link rel="stylesheet" href="style.css"> 
+        <style>
+            .example{
+                position:relative;
+                padding:0;
+                width:500px;
+                display:block;
+                cursor:pointer;
+                overflow:hidden;
+            }
+            .content {
+                opacity:0;
+                font-size: 40px;
+                position:absolute;
+                top:0px;
+                left:0;
+                color:black;
+                background-color:rgba(200,200,200,0.5);
+                width:500px;
+                height:500px;
+                transition: all 400ms ease-in;
+            }
+            .example .content:hover { opacity:1; }      
+            .example .content .text {
+                height:0;
+                opacity:1;
+                transition-delay: 0s;
+                transition-duration: 0.4s;
+            }
+            .example .content:hover .text {
+                opacity:1;
+                transform: translateY(250px);
+            }
+            .images{
+                display: flex;
+                margin-top:100px;
+            }
+
+            @media screen and (max-width:800px){
+                .images{
+                    display:block;
+                    position:absolute;
+                    z-index: -100;
+                    left:50%;
+                    margin-left:-250px;
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="portfolio.js"></script>
+        <div id="navbar">
+            <a href="Recent%20resume%20copy.pdf">Resume</a>
+            <a href="Work.html"><B>Work</B></a>
+            <a href="about.html">About</a>         
+            <a href="index.html">Home</a>
+        </div>
+        <br/><br/>
+        <div class="images">
+            <div class="example" >
+                <a href="Digital.html">
+                    <img src="digital%20front.jpeg"width="500" />
+                    <div class="content">
+                        <div class="text">Digital</div>
+                    </div>
+                </a>
+            </div>
+            <div class="example">
+                <a href="photo.html">
+                    <img src="Photofront.jpg"width="500" />
+                    <div class="content">
+                        <div class="text">Photograph</div>
+                    </div>
+                </a>
+            </div>
+            <div class="example">
+                <a  href="traditional.html">
+                    <img src="traditional%20front.jpg"width="500"/>
+                    <div class="content">
+                        <div class="text">Traditional</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body> 
+</html>
